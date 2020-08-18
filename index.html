@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Шапка -->
 
@@ -458,21 +459,66 @@
 
         <!-- Форма -->
 
-        <div class="footer-form">
-          <p class="action-description">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <button type="button" class="button primary">
-            Подписаться
-            <svg class="icon">
-              <use href="./images/svg-sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-        </div>
+        <form>
+          <div class="footer-form">
+            <label for="mail" class="action-description"
+              >ПОДПИШИТЕСЬ НА РАССЫЛКУ</label
+            >
+            <div class="form-position">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="form-field"
+                placeholder="E-mail"
+              />
+
+              <button type="button" class="button primary">
+                Подписаться
+                <svg class="icon">
+                  <use href="./images/svg-sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button href="" class="btn-close" data-modal-close></button>
+        <form class="modal-form">
+          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+
+          <div class="modal-form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="telephone" id="tel" />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="10"></textarea>
+          </div>
+
+          <div class="policy">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 

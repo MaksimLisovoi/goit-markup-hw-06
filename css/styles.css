@@ -517,6 +517,28 @@ footer {
   padding-bottom: 60px;
   padding-top: 60px;
 }
+.form-field {
+  margin-right: 12px;
+  width: 358px;
+}
+.form-position {
+  display: flex;
+}
+.form-position input {
+  padding: 16px 15px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.footer-form {
+}
 
 .container.footer {
   display: flex;
@@ -532,6 +554,8 @@ footer {
 }
 
 .action-description {
+  display: block;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -539,6 +563,7 @@ footer {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+  margin-top: 14px;
 }
 
 .footer-link {
@@ -758,7 +783,45 @@ footer {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+.modal-form {
+}
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
 
+  margin-bottom: 10px;
+}
+.modal-form-field input {
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-form-field label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+}
+.modal-form-field textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+.policy {
+  display: flex;
+}
+.modal-form > h2 {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
 .btn-close {
   position: absolute;
   top: 8px;
