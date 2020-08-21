@@ -473,7 +473,7 @@
                 placeholder="E-mail"
               />
 
-              <button type="button" class="button primary">
+              <button type="button" class="button primary subscribe">
                 Подписаться
                 <svg class="icon">
                   <use href="./images/svg-sprite.svg#icon-send"></use>
@@ -493,22 +493,35 @@
 
           <div class="modal-form-field">
             <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" class="form-input" />
+            <svg class="label-icon name">
+              <use href="./images/svg-sprite.svg#icon-name"></use>
+            </svg>
           </div>
 
           <div class="modal-form-field">
             <label for="tel">Телефон</label>
             <input type="tel" name="telephone" id="tel" />
+            <svg class="label-icon tel">
+              <use href="./images/svg-sprite.svg#icon-tel"></use>
+            </svg>
           </div>
 
           <div class="modal-form-field">
             <label for="mail">Почта</label>
             <input type="email" name="mail" id="mail" />
+            <svg class="label-icon mail">
+              <use href="./images/svg-sprite.svg#icon-mail"></use>
+            </svg>
           </div>
 
           <div class="modal-form-field">
             <label for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" rows="10"></textarea>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
           </div>
 
           <div class="policy">
@@ -517,7 +530,9 @@
               >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
             </label>
           </div>
-          <button type="submit">Отправить</button>
+          <div class="button-position">
+            <button type="submit" class="button primary send">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
