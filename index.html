@@ -487,7 +487,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button href="" class="btn-close" data-modal-close></button>
+        <button href="" class="btn-close" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/svg-sprite.svg#icon-close"></use>
+          </svg>
+        </button>
         <form class="modal-form">
           <h2>Оставьте свои данные, мы вам перезвоним</h2>
 
@@ -501,7 +505,7 @@
 
           <div class="modal-form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="telephone" id="tel" />
+            <input type="tel" name="telephone" id="tel" class="form-input" />
             <svg class="label-icon tel">
               <use href="./images/svg-sprite.svg#icon-tel"></use>
             </svg>
@@ -509,7 +513,7 @@
 
           <div class="modal-form-field">
             <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail" />
+            <input type="email" name="mail" id="mail" class="form-input" />
             <svg class="label-icon mail">
               <use href="./images/svg-sprite.svg#icon-mail"></use>
             </svg>
@@ -525,7 +529,8 @@
           </div>
 
           <div class="policy">
-            <input type="checkbox" name="policy" id="policy" />
+            <input class="checkbox" type="checkbox" name="policy" id="policy" />
+            <span class="icon-check"> </span>
             <label for="policy"
               >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
             </label>

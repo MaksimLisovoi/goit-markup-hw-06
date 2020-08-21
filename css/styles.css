@@ -802,7 +802,38 @@ footer {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal-form {
+/* Modal form */
+.modal-form > h2 {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-close {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 8px;
+  right: 8px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close:hover {
+  fill: var(--accent-color);
 }
 .modal-form-field {
   position: relative;
@@ -811,15 +842,17 @@ footer {
 
   margin-bottom: 10px;
 }
-.modal-form-field input {
+.form-input {
   height: 40px;
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-field input:focus-within {
-  border: 1px solid #2196f3;
+.form-input:focus {
+  border-color: #2196f3;
   border-radius: 4px;
 }
 
@@ -857,6 +890,8 @@ label + textarea::placeholder {
 
   display: inline-block;
   transform: translateY(150%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-icon.name {
   width: 12px;
@@ -882,33 +917,37 @@ label + textarea::placeholder {
 
   color: var(--title-text-color);
 }
+.checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.icon-check {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+.checkbox:checked + .icon-check {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/icons/full-check-s.svg);
+
+  background-size: contain;
+  background-origin: border-box;
+}
 a {
   color: var(--accent-color);
 }
-.modal-form > h2 {
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0;
-}
-.btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
 
-  width: 30px;
-  height: 30px;
-
-  border: 0;
-  background-color: var(--primary-white-color);
-
-  background-image: url(../images/icons/close.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
+/* "./images/svg-sprite.svg#icon-full-check" */
 /* @keyframes modal-open {
   0% {
   }
