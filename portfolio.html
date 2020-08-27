@@ -301,7 +301,7 @@
     </main>
 
     <!-- Футер -->
-
+    
     <footer>
       <div class="container footer">
         <div class="footer-contacts">
@@ -359,15 +359,21 @@
     
         <!-- Форма -->
     
-        <div class="footer-form">
-          <p class="action-description">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <button type="button" class="button primary">
-            Подписаться
-            <svg class="icon">
-              <use href="./images/svg-sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-        </div>
+        <form>
+          <div class="footer-form">
+            <label for="mail" class="action-description">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+            <div class="form-position">
+              <input type="email" name="mail" id="mail" class="form-field" placeholder="E-mail" />
+    
+              <button type="button" class="button primary subscribe">
+                Подписаться
+                <svg class="icon">
+                  <use href="./images/svg-sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
 
